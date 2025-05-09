@@ -39,7 +39,7 @@ No external frameworks were used – it's 100% vanilla code.
 ---
 
 ## 🌐 Live Demo
-
+https://bipinbudhathoki.com.np/neb-gpa-calculator-class-11-12
 
 ---
 
