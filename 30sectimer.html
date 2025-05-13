@@ -3,38 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <title>60 Second Timer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f0f0f0;
-      text-align: center;
-      padding: 100px;
+      background: #ffffff;
+      margin: 0;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      box-sizing: border-box;
     }
-    #timer {
-      font-size: 48px;
+
+    h1 {
+      font-size: 22px;
       margin-bottom: 20px;
       color: #333;
     }
+
+    #timer {
+      font-size: 36px;
+      font-weight: bold;
+      color: #000;
+      margin-bottom: 30px;
+    }
+
     #link {
       display: none;
-      font-size: 20px;
-      margin-top: 30px;
+      margin-top: 20px;
+      font-size: 16px;
     }
-    a {
+
+    #link a {
+      background-color: #0066cc;
+      color: #fff;
+      padding: 10px 20px;
       text-decoration: none;
-      color: #0066cc;
-      font-weight: bold;
+      border-radius: 6px;
+      display: inline-block;
+    }
+
+    #link a:hover {
+      background-color: #004c99;
     }
   </style>
 </head>
 <body>
-  <h1>⏳ 60-Second Timer</h1>
+  <h1>⏳ Please wait for the timer to finish</h1>
   <div id="timer">60</div>
 
-  <!-- Hidden link that will show after 60 seconds -->
   <div id="link">
     👉 <a href="https://vnshortener.com/canvaPremiumfreebipinblog" target="_blank">
-      Click here to get Canva Premium for Free 🎁
+      Get Canva Premium for FREE 🎁
     </a>
   </div>
 
