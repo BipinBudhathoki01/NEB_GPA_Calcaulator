@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>60 Second Timer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      text-align: center;
+      padding: 100px;
+    }
+    #timer {
+      font-size: 48px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    #link {
+      display: none;
+      font-size: 20px;
+      margin-top: 30px;
+    }
+    a {
+      text-decoration: none;
+      color: #0066cc;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>⏳ 60-Second Timer</h1>
+  <div id="timer">60</div>
+
+  <!-- Hidden link that will show after 60 seconds -->
+  <div id="link">
+    👉 <a href="https://vnshortener.com/canvaPremiumfreebipinblog" target="_blank">
+      Click here to get Canva Premium for Free 🎁
+    </a>
+  </div>
+
+  <script>
+    let timeLeft = 60;
+    const timerDisplay = document.getElementById('timer');
+    const linkDisplay = document.getElementById('link');
+
+    const countdown = setInterval(() => {
+      timeLeft--;
+      timerDisplay.textContent = timeLeft;
+
+      if (timeLeft <= 0) {
+        clearInterval(countdown);
+        timerDisplay.textContent = "⏰ Time's up!";
+        linkDisplay.style.display = "block";
+      }
+    }, 1000);
+  </script>
+</body>
+</html>
